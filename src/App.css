@@ -1,3 +1,4 @@
+/* Ensure the entire viewport is used */
 html,
 body {
   height: 100%;
@@ -6,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-size: cover;
 }
 
 /* Center the form in the middle of the page */
@@ -17,6 +18,7 @@ form {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: left;
+  opacity: 0.95; /* Slight transparency to blend with background */
 }
 
 /* Style each form field */
@@ -33,7 +35,9 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form input[type="number"],
-form input[type="checkbox"] {
+form input[type="url"],
+form input[type="checkbox"],
+form select {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;

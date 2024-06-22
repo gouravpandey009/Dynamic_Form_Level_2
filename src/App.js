@@ -1,12 +1,12 @@
 import React from "react";
-import EventForm from "./components/EventForm";
+import JobApplicationForm from "./components/JobApplicationForm";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Event Registration Form</h1>
-      <EventForm />
+      <h1>Job Application Form</h1>
+      <JobApplicationForm />
     </div>
   );
 }
